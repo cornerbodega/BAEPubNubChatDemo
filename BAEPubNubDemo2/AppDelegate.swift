@@ -9,16 +9,34 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, PNDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+            PubNub.setDelegate(self)
         // Override point for customization after application launch.
         return true
     }
 
+    func pubnubClient(client: PubNub!, didConnectToOrigin origin: String!) {
+        println(origin)
+    }
+    
+    func pubnubClient(client: PubNub!, didSendMessage message: PNMessage!) {
+        println("did send message! \(message)")
+    }
+    
+    func pubnubClient(client: PubNub!, didFailMessageSend message: PNMessage!, withError error: PNError!) {
+        //PubNub client failed to send message '%@' because of error: %@", message, error)
+        println("PubNub client failed to send message \(message) because of error \(error)")
+    }
+    
+    func pubnubClient(client: PubNub!, didReceiveMessage message: PNMessage!) {
+        println("PubNub client received message \(message)")
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

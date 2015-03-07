@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8C1743F1AAA947100660B85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1743E1AAA947100660B85 /* User.swift */; };
 		C8E0E2FC1AA98BB3000BFBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E0E2FB1AA98BB3000BFBD4 /* AppDelegate.swift */; };
 		C8E0E2FE1AA98BB3000BFBD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E0E2FD1AA98BB3000BFBD4 /* ViewController.swift */; };
 		C8E0E3011AA98BB3000BFBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E0E2FF1AA98BB3000BFBD4 /* Main.storyboard */; };
 		C8E0E3031AA98BB3000BFBD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E0E3021AA98BB3000BFBD4 /* Images.xcassets */; };
 		C8E0E3061AA98BB3000BFBD4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E0E3041AA98BB3000BFBD4 /* LaunchScreen.xib */; };
 		C8E0E3121AA98BB3000BFBD4 /* BAEPubNubDemo2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E0E3111AA98BB3000BFBD4 /* BAEPubNubDemo2Tests.swift */; };
+		F0B72EED7BE05E732B0BF9D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75823367DC086A989D0CB96E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75823367DC086A989D0CB96E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E67B716F51E9B4E12B6EF8E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		ABFA70C8EA4568FF775E98FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C89A57A91AA98D4D004DB203 /* BAEPubNubDemo2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAEPubNubDemo2-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8C1743E1AAA947100660B85 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
 		C8E0E2F61AA98BB3000BFBD4 /* BAEPubNubDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAEPubNubDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E0E2FA1AA98BB3000BFBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8E0E2FB1AA98BB3000BFBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B72EED7BE05E732B0BF9D2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +64,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065DBA94118CE98DA841E616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75823367DC086A989D0CB96E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90F8F41210AD46C10B363EC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E67B716F51E9B4E12B6EF8E /* Pods.debug.xcconfig */,
+				ABFA70C8EA4568FF775E98FD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C8E0E2ED1AA98BB3000BFBD4 = {
 			isa = PBXGroup;
 			children = (
 				C8E0E2F81AA98BB3000BFBD4 /* BAEPubNubDemo2 */,
 				C8E0E30E1AA98BB3000BFBD4 /* BAEPubNubDemo2Tests */,
 				C8E0E2F71AA98BB3000BFBD4 /* Products */,
+				90F8F41210AD46C10B363EC4 /* Pods */,
+				065DBA94118CE98DA841E616 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +104,14 @@
 		C8E0E2F81AA98BB3000BFBD4 /* BAEPubNubDemo2 */ = {
 			isa = PBXGroup;
 			children = (
+				C8C1743E1AAA947100660B85 /* User.swift */,
 				C8E0E2FB1AA98BB3000BFBD4 /* AppDelegate.swift */,
 				C8E0E2FD1AA98BB3000BFBD4 /* ViewController.swift */,
 				C8E0E2FF1AA98BB3000BFBD4 /* Main.storyboard */,
 				C8E0E3021AA98BB3000BFBD4 /* Images.xcassets */,
 				C8E0E3041AA98BB3000BFBD4 /* LaunchScreen.xib */,
 				C8E0E2F91AA98BB3000BFBD4 /* Supporting Files */,
+				C89A57A91AA98D4D004DB203 /* BAEPubNubDemo2-Bridging-Header.h */,
 			);
 			path = BAEPubNubDemo2;
 			sourceTree = "<group>";
@@ -119,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8E0E3151AA98BB3000BFBD4 /* Build configuration list for PBXNativeTarget "BAEPubNubDemo2" */;
 			buildPhases = (
+				4BE5BB4BD5D91CE3FD60E8DE /* Check Pods Manifest.lock */,
 				C8E0E2F21AA98BB3000BFBD4 /* Sources */,
 				C8E0E2F31AA98BB3000BFBD4 /* Frameworks */,
 				C8E0E2F41AA98BB3000BFBD4 /* Resources */,
+				34798F9570C5435B1C146022 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +238,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34798F9570C5435B1C146022 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BE5BB4BD5D91CE3FD60E8DE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8E0E2F21AA98BB3000BFBD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,6 +278,7 @@
 			files = (
 				C8E0E2FE1AA98BB3000BFBD4 /* ViewController.swift in Sources */,
 				C8E0E2FC1AA98BB3000BFBD4 /* AppDelegate.swift in Sources */,
+				C8C1743F1AAA947100660B85 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,21 +401,28 @@
 		};
 		C8E0E3161AA98BB3000BFBD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E67B716F51E9B4E12B6EF8E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BAEPubNubDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BAEPubNubDemo2/BAEPubNubDemo2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C8E0E3171AA98BB3000BFBD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFA70C8EA4568FF775E98FD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BAEPubNubDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BAEPubNubDemo2/BAEPubNubDemo2-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +479,7 @@
 				C8E0E3171AA98BB3000BFBD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8E0E3181AA98BB3000BFBD4 /* Build configuration list for PBXNativeTarget "BAEPubNubDemo2Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +488,7 @@
 				C8E0E31A1AA98BB3000BFBD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
